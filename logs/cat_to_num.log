@@ -1,0 +1,4 @@
+2025-12-17 17:55:53,808 - INFO - Index(['Gender'], dtype='object')
+2025-12-17 17:55:53,809 - INFO - Gender--->['male' 'female']
+2025-12-17 17:55:53,813 - INFO - Index(['Gender_male'], dtype='object')
+2025-12-17 17:55:53,815 - INFO - Index(['Gender_male'], dtype='object')
