@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calories Burn Predictor</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+        }
+        .container {
+            width: 420px;
+            margin: 50px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        h2 {
+            text-align: center;
+        }
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+            text-align: center;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Calories Burn Prediction</h2>
+
+    <form method="POST">
+        <input type="number" name="age" placeholder="Age" required step="any">
+        <input type="number" name="height" placeholder="Height (cm)" required step="any">
+        <input type="number" name="weight" placeholder="Weight (kg)" required step="any">
+        <input type="number" name="duration" placeholder="Exercise Duration (minutes)" required step="any">
+        <input type="number" name="heart_rate" placeholder="Heart Rate" required step="any">
+        <input type="number" name="body_temp" placeholder="Body Temperature (°C)" required step="any">
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <button type="submit">Predict Calories</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            🔥 Estimated Calories Burned: <b>{{ prediction }}</b>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
