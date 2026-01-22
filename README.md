@@ -86,8 +86,7 @@ calories-burnt-prediction-ml/
 ### Step 1: Clone the Repository
 
 ```
-git clone https://github.com/amareshtoxico/calories-burnt-prediction-ml.git
-cd calories-burnt-prediction-ml
+https://calories-burnt-prediction-iyoc.onrender.com
 ```
 
 ### Step 2: Create and Activate Virtual Environment
